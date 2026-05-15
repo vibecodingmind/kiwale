@@ -76,7 +76,7 @@ export default function Navbar() {
         scrolled ? 'shadow-lg' : 'shadow-sm'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-20 md:h-24">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 flex items-center justify-between h-14 sm:h-16 md:h-24">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 shrink-0">
           <Image
@@ -84,7 +84,7 @@ export default function Navbar() {
             alt="Kiwaleis"
             width={220}
             height={66}
-            className="h-14 md:h-16 w-auto object-contain"
+            className="h-9 sm:h-12 md:h-16 w-auto object-contain"
             priority
           />
         </Link>
@@ -125,7 +125,7 @@ export default function Navbar() {
                     <div className="px-5 pt-1 pb-2">
                       <div className="flex items-center gap-2 mb-1">
                         <Building2 className="size-3.5 text-[#00908C]" />
-                        <span className="text-[10px] font-bold text-[#00908C] uppercase tracking-widest">Building Solutions (KIWALE)</span>
+                        <span className="text-[10px] font-bold text-[#00908C] uppercase tracking-widest">Building Solutions</span>
                       </div>
                     </div>
                     {buildingServices.map((service) => (
@@ -146,7 +146,7 @@ export default function Navbar() {
                     <div className="px-5 pt-1 pb-2">
                       <div className="flex items-center gap-2 mb-1">
                         <Truck className="size-3.5 text-[#005c59]" />
-                        <span className="text-[10px] font-bold text-[#005c59] uppercase tracking-widest">Transport & Logistics (KIWALEIS)</span>
+                        <span className="text-[10px] font-bold text-[#005c59] uppercase tracking-widest">Transport & Logistics</span>
                       </div>
                     </div>
                     {transportServices.map((service) => (
@@ -233,7 +233,7 @@ export default function Navbar() {
                           {/* Building Solutions Header */}
                           <div className="flex items-center gap-1.5 px-4 py-2">
                             <Building2 className="size-3 text-[#00908C]" />
-                            <span className="text-[10px] font-bold text-[#00908C] uppercase tracking-wider">Building Solutions (KIWALE)</span>
+                            <span className="text-[10px] font-bold text-[#00908C] uppercase tracking-wider">Building Solutions</span>
                           </div>
                           {buildingServices.map((service) => (
                             <Link
@@ -248,7 +248,7 @@ export default function Navbar() {
                           {/* Transport Header */}
                           <div className="flex items-center gap-1.5 px-4 py-2 mt-1">
                             <Truck className="size-3 text-[#005c59]" />
-                            <span className="text-[10px] font-bold text-[#005c59] uppercase tracking-wider">Transport & Logistics (KIWALEIS)</span>
+                            <span className="text-[10px] font-bold text-[#005c59] uppercase tracking-wider">Transport & Logistics</span>
                           </div>
                           {transportServices.map((service) => (
                             <Link

@@ -35,33 +35,33 @@ export default function FooterSection() {
 
   return (
     <footer className="bg-[#005c59] text-white">
-      <div className="max-w-7xl mx-auto px-4 pt-14 pb-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-10 sm:pt-14 pb-6 sm:pb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
           {/* Column 1 - Company Info + Social */}
           <div>
-            <div className="mb-4">
+            <div className="mb-3 sm:mb-4">
               <Image
                 src="/KIWALE-white.png"
-                alt="Kiwale"
+                alt="Kiwaleis"
                 width={180}
                 height={52}
-                className="h-12 w-auto object-contain"
+                className="h-10 sm:h-12 w-auto object-contain"
                 priority
               />
             </div>
-            <p className="text-white/60 text-sm leading-relaxed">
+            <p className="text-white/60 text-xs sm:text-sm leading-relaxed">
               Kiwaleis Investment Limited — Building materials and transportation solutions under one roof.
             </p>
             {/* Social Links */}
-            <div className="flex items-center gap-3 mt-5">
+            <div className="flex items-center gap-2.5 sm:gap-3 mt-4 sm:mt-5">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00908C] transition-colors"
+                  className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#00908C] transition-colors"
                 >
-                  <social.icon className="size-4" />
+                  <social.icon className="size-3.5 sm:size-4" />
                 </a>
               ))}
             </div>
@@ -69,13 +69,13 @@ export default function FooterSection() {
 
           {/* Column 2 - Quick Links */}
           <div>
-            <h3 className="text-base font-bold mb-4 text-white">Quick Links</h3>
-            <ul className="space-y-2.5">
+            <h3 className="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-white">Quick Links</h3>
+            <ul className="space-y-2 sm:space-y-2.5">
               {infoLinks.map((link) => (
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-white/60 text-sm hover:text-[#00b0aa] transition-colors"
+                    className="text-white/60 text-xs sm:text-sm hover:text-[#00b0aa] transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -86,8 +86,8 @@ export default function FooterSection() {
 
           {/* Column 3 - Building Solutions + Transport */}
           <div>
-            <h3 className="text-base font-bold mb-4 text-white">Our Services</h3>
-            <ul className="space-y-2.5">
+            <h3 className="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-white">Our Services</h3>
+            <ul className="space-y-2 sm:space-y-2.5">
               {/* Building Solutions */}
               <li className="flex items-center gap-1.5 pt-1">
                 <Building2 className="size-3 text-[#00e5df]" />
@@ -97,14 +97,14 @@ export default function FooterSection() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-white/60 text-sm hover:text-[#00b0aa] transition-colors pl-5"
+                    className="text-white/60 text-xs sm:text-sm hover:text-[#00b0aa] transition-colors pl-5"
                   >
                     {link.label}
                   </Link>
                 </li>
               ))}
               {/* Transport & Logistics */}
-              <li className="flex items-center gap-1.5 pt-3">
+              <li className="flex items-center gap-1.5 pt-2 sm:pt-3">
                 <Truck className="size-3 text-[#00e5df]" />
                 <span className="text-[10px] font-bold text-[#00e5df] uppercase tracking-wider">Transport & Logistics</span>
               </li>
@@ -112,7 +112,7 @@ export default function FooterSection() {
                 <li key={link.label}>
                   <Link
                     href={link.href}
-                    className="text-white/60 text-sm hover:text-[#00b0aa] transition-colors pl-5"
+                    className="text-white/60 text-xs sm:text-sm hover:text-[#00b0aa] transition-colors pl-5"
                   >
                     {link.label}
                   </Link>
@@ -123,28 +123,28 @@ export default function FooterSection() {
 
           {/* Column 4 - Get In Touch */}
           <div>
-            <h3 className="text-base font-bold mb-4 text-white">Get In Touch</h3>
-            <ul className="space-y-3">
+            <h3 className="text-sm sm:text-base font-bold mb-3 sm:mb-4 text-white">Get In Touch</h3>
+            <ul className="space-y-2.5 sm:space-y-3">
               <li>
                 <a
                   href="tel:+255762525846"
-                  className="flex items-start gap-3 text-white/60 text-sm hover:text-[#00b0aa] transition-colors"
+                  className="flex items-start gap-2.5 sm:gap-3 text-white/60 text-xs sm:text-sm hover:text-[#00b0aa] transition-colors"
                 >
-                  <Phone className="size-4 mt-0.5 shrink-0" />
+                  <Phone className="size-3.5 sm:size-4 mt-0.5 shrink-0" />
                   <span>+255 762 525 846</span>
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:info@kwl.co.tz"
-                  className="flex items-start gap-3 text-white/60 text-sm hover:text-[#00b0aa] transition-colors"
+                  className="flex items-start gap-2.5 sm:gap-3 text-white/60 text-xs sm:text-sm hover:text-[#00b0aa] transition-colors"
                 >
-                  <Mail className="size-4 mt-0.5 shrink-0" />
+                  <Mail className="size-3.5 sm:size-4 mt-0.5 shrink-0" />
                   <span>info@kwl.co.tz</span>
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-white/60 text-sm">
-                <MapPin className="size-4 mt-0.5 shrink-0" />
+              <li className="flex items-start gap-2.5 sm:gap-3 text-white/60 text-xs sm:text-sm">
+                <MapPin className="size-3.5 sm:size-4 mt-0.5 shrink-0" />
                 <span>
                   Plot No.620, Block A, Buguruni Area, Ilala, Dar es Salaam
                 </span>
@@ -154,9 +154,9 @@ export default function FooterSection() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-6 border-t border-white/10 text-center">
-          <p className="text-white/40 text-sm">
-            Copyright &copy; {currentYear} Kiwale | All Rights Reserved
+        <div className="mt-8 sm:mt-12 pt-4 sm:pt-6 border-t border-white/10 text-center">
+          <p className="text-white/40 text-xs sm:text-sm">
+            Copyright &copy; {currentYear} Kiwaleis Investment Limited | All Rights Reserved
           </p>
         </div>
       </div>

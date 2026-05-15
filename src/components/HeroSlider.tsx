@@ -26,7 +26,7 @@ const slides = [
     title: 'Your Success Drives Our Commitment to Excellence',
     subtitle: 'Integrity, Reliability & Lasting Partnerships',
     description:
-      'At Kiwaleis, we go beyond supply — we build lasting partnerships founded on trust, quality materials, and exceptional service that keeps your projects moving forward.',
+      'At Kiwaleis Investment Limited, we go beyond supply — we build lasting partnerships founded on trust, quality materials, and exceptional service that keeps your projects moving forward.',
   },
 ]
 
@@ -94,9 +94,9 @@ export default function HeroSlider() {
       ref={sectionRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden"
+      className="relative w-full h-[420px] sm:h-[480px] md:h-[560px] lg:h-[700px] overflow-hidden"
     >
-      {/* Background Images with Ken Burns + Parallax */}
+      {/* Background Images */}
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -126,34 +126,34 @@ export default function HeroSlider() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 h-full max-w-7xl mx-auto px-4 flex items-center justify-center text-center">
+      <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-center text-center">
         <div
           key={current}
           className={isAnimating ? 'hero-slide-active' : 'hero-slide-hidden'}
           style={{ '--slide-dir': slideDir } as React.CSSProperties}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="hero-text-1 text-sm md:text-base uppercase tracking-[0.2em] text-[#00e5df] font-semibold mb-3">
+            <p className="hero-text-1 text-[10px] sm:text-xs md:text-sm uppercase tracking-[0.15em] sm:tracking-[0.2em] text-[#00e5df] font-semibold mb-2 sm:mb-3">
               {slides[current].subtitle}
             </p>
-            <h2 className="hero-text-2 text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-snug md:leading-tight">
+            <h2 className="hero-text-2 text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-white leading-snug md:leading-tight">
               {slides[current].title}
             </h2>
-            <p className="hero-text-3 mt-5 text-base md:text-lg text-white/85 leading-relaxed max-w-2xl mx-auto">
+            <p className="hero-text-3 mt-3 sm:mt-5 text-sm sm:text-base md:text-lg text-white/85 leading-relaxed max-w-2xl mx-auto px-2">
               {slides[current].description}
             </p>
-            <div className="hero-text-4 mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
-              <Link href="/contact">
+            <div className="hero-text-4 mt-5 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-4">
+              <Link href="/contact" className="w-full sm:w-auto">
                 <Button
-                  className="bg-[#00908C] hover:bg-[#007370] text-white font-semibold px-8 py-3 text-base btn-glow w-full sm:w-auto"
+                  className="bg-[#00908C] hover:bg-[#007370] text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base btn-glow w-full sm:w-auto"
                   size="lg"
                 >
                   Get a Quote
                 </Button>
               </Link>
-              <Link href="/services">
+              <Link href="/services" className="w-full sm:w-auto">
                 <Button
-                  className="bg-white/15 backdrop-blur-sm border border-white/30 text-white hover:bg-white/25 hover:text-white font-semibold px-8 py-3 text-base w-full sm:w-auto"
+                  className="bg-white/15 backdrop-blur-sm border border-white/30 text-white hover:bg-white/25 hover:text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base w-full sm:w-auto"
                   size="lg"
                 >
                   Our Services
@@ -168,20 +168,20 @@ export default function HeroSlider() {
       <button
         onClick={prev}
         aria-label="Previous slide"
-        className="slider-arrow absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 p-3 md:p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full text-white transition-all duration-300 hover:scale-110 group"
+        className="slider-arrow absolute left-2 sm:left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 md:p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full text-white transition-all duration-300 hover:scale-110 group"
       >
-        <ChevronLeft className="size-5 md:size-6 group-hover:-translate-x-0.5 transition-transform" />
+        <ChevronLeft className="size-4 sm:size-5 md:size-6 group-hover:-translate-x-0.5 transition-transform" />
       </button>
       <button
         onClick={next}
         aria-label="Next slide"
-        className="slider-arrow absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 p-3 md:p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full text-white transition-all duration-300 hover:scale-110 group"
+        className="slider-arrow absolute right-2 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 p-2 sm:p-3 md:p-4 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full text-white transition-all duration-300 hover:scale-110 group"
       >
-        <ChevronRight className="size-5 md:size-6 group-hover:translate-x-0.5 transition-transform" />
+        <ChevronRight className="size-4 sm:size-5 md:size-6 group-hover:translate-x-0.5 transition-transform" />
       </button>
 
       {/* Dots */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3">
+      <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2 sm:gap-3">
         {slides.map((_, index) => (
           <button
             key={index}
@@ -189,15 +189,15 @@ export default function HeroSlider() {
             aria-label={`Go to slide ${index + 1}`}
             className={`transition-all duration-500 rounded-full ${
               index === current
-                ? 'w-10 h-3 bg-[#00908C] shadow-[0_0_12px_rgba(0,144,140,0.5)]'
-                : 'w-3 h-3 bg-white/40 hover:bg-white/70 hover:scale-125'
+                ? 'w-8 sm:w-10 h-2.5 sm:h-3 bg-[#00908C] shadow-[0_0_12px_rgba(0,144,140,0.5)]'
+                : 'w-2.5 sm:w-3 h-2.5 sm:h-3 bg-white/40 hover:bg-white/70 hover:scale-125'
             }`}
           />
         ))}
       </div>
 
       {/* Side Progress Line */}
-      <div className="absolute right-6 md:right-10 top-1/2 -translate-y-1/2 z-20 hidden lg:flex flex-col items-center gap-2">
+      <div className="absolute right-4 sm:right-6 md:right-10 top-1/2 -translate-y-1/2 z-20 hidden lg:flex flex-col items-center gap-2">
         {slides.map((_, index) => (
           <button
             key={index}

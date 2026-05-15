@@ -60,39 +60,39 @@ export default function Services() {
   })
 
   return (
-    <section id="services" className="bg-[#f8f9fa] py-16 md:py-24">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="services" className="bg-[#f8f9fa] py-10 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div ref={headerReveal.ref} className="text-center mb-12">
-          <p className="text-[#00908C] font-semibold text-sm uppercase tracking-wider mb-2">
+        <div ref={headerReveal.ref} className="text-center mb-8 md:mb-12">
+          <p className="text-[#00908C] font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2">
             What We Offer
           </p>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a2e]">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a1a2e]">
             Solutions Built for Your Success
           </h2>
-          <p className="mt-4 text-[#606060] max-w-2xl mx-auto text-base leading-relaxed">
+          <p className="mt-3 sm:mt-4 text-[#606060] max-w-2xl mx-auto text-sm sm:text-base leading-relaxed px-2">
             From premium building materials to seamless logistics — we deliver the quality and reliability your projects demand, every step of the way.
           </p>
         </div>
 
-        {/* ─── Kiwaleis ─── */}
-        <div className="mb-12">
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#00908C] to-[#00b0aa] flex items-center justify-center">
-              <Building2 className="size-4 text-white" />
+        {/* ─── Kiwaleis Investment Limited Building Solution ─── */}
+        <div className="mb-8 md:mb-12">
+          <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#00908C] to-[#00b0aa] flex items-center justify-center shrink-0">
+              <Building2 className="size-3.5 sm:size-4 text-white" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-[#1a1a2e]">Kiwaleis</h3>
+              <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#1a1a2e]">Kiwaleis Investment Limited Building Solution</h3>
             </div>
           </div>
-          <div ref={buildingReveal.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div ref={buildingReveal.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {buildingServices.map((service) => (
               <Link
                 key={service.title}
                 href={service.href}
                 className="card-glow bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group cursor-pointer"
               >
-                <div className="relative h-40 overflow-hidden img-reveal">
+                <div className="relative h-32 sm:h-40 overflow-hidden img-reveal">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -102,14 +102,14 @@ export default function Services() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="p-4">
-                  <h4 className="text-sm font-bold text-[#00908C] mb-1.5 line-clamp-2 group-hover:text-[#007370] transition-colors">
+                <div className="p-3 sm:p-4">
+                  <h4 className="text-xs sm:text-sm font-bold text-[#00908C] mb-1 sm:mb-1.5 line-clamp-2 group-hover:text-[#007370] transition-colors">
                     {service.title}
                   </h4>
-                  <p className="text-xs text-[#606060] leading-relaxed mb-2 line-clamp-2">
+                  <p className="text-[10px] sm:text-xs text-[#606060] leading-relaxed mb-2 line-clamp-2">
                     {service.description}
                   </p>
-                  <span className="inline-flex items-center gap-1 text-xs font-medium text-[#00908C] hover:text-[#007370] transition-colors group/link link-underline">
+                  <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-medium text-[#00908C] hover:text-[#007370] transition-colors group/link link-underline">
                     Read More
                     <ArrowRight className="size-3 group-hover/link:translate-x-1 transition-transform" />
                   </span>
@@ -121,22 +121,22 @@ export default function Services() {
 
         {/* ─── Kiwale Group Limited Transport and Logistics ─── */}
         <div>
-          <div className="flex items-center gap-2 mb-6">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#005c59] to-[#007370] flex items-center justify-center">
-              <Truck className="size-4 text-white" />
+          <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+            <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#005c59] to-[#007370] flex items-center justify-center shrink-0">
+              <Truck className="size-3.5 sm:size-4 text-white" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-[#1a1a2e]">Kiwale Group Limited Transport and Logistics</h3>
+              <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#1a1a2e]">Kiwale Group Limited Transport and Logistics</h3>
             </div>
           </div>
-          <div ref={transportReveal.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div ref={transportReveal.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {transportServices.map((service) => (
               <Link
                 key={service.title}
                 href={service.href}
                 className="card-glow bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group cursor-pointer sm:col-span-2 lg:col-span-2"
               >
-                <div className="relative h-48 overflow-hidden img-reveal">
+                <div className="relative h-40 sm:h-48 overflow-hidden img-reveal">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -146,16 +146,16 @@ export default function Services() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="p-5">
-                  <h4 className="text-base font-bold text-[#00908C] mb-2 group-hover:text-[#007370] transition-colors">
+                <div className="p-4 sm:p-5">
+                  <h4 className="text-sm sm:text-base font-bold text-[#00908C] mb-1.5 sm:mb-2 group-hover:text-[#007370] transition-colors">
                     {service.title}
                   </h4>
-                  <p className="text-sm text-[#606060] leading-relaxed mb-3 line-clamp-3">
+                  <p className="text-xs sm:text-sm text-[#606060] leading-relaxed mb-2 sm:mb-3 line-clamp-3">
                     {service.description}
                   </p>
-                  <span className="inline-flex items-center gap-1 text-sm font-medium text-[#00908C] hover:text-[#007370] transition-colors group/link link-underline">
+                  <span className="inline-flex items-center gap-1 text-xs sm:text-sm font-medium text-[#00908C] hover:text-[#007370] transition-colors group/link link-underline">
                     Read More
-                    <ArrowRight className="size-3.5 group-hover/link:translate-x-1 transition-transform" />
+                    <ArrowRight className="size-3 sm:size-3.5 group-hover/link:translate-x-1 transition-transform" />
                   </span>
                 </div>
               </Link>
