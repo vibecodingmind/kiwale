@@ -14,11 +14,11 @@ const faqCategories = [
     category: 'General Questions',
     items: [
       {
-        question: 'What is KWL?',
-        answer: 'KWL is the united brand of two well-established Tanzanian companies — Kiwaleis Investment Limited (building materials supply) and Kiwale Group Limited (transportation & logistics) — now operating together under one roof. By merging, we offer a complete, seamless experience: from sourcing quality materials to delivering them to your site, KWL is your single point of contact.',
+        question: 'What is Kiwaleis?',
+        answer: 'Kiwaleis Investment Limited is a well-established Tanzanian company — Kiwaleis Investment Limited (building materials supply) and Kiwale Group Limited (transportation & logistics) — now operating together under one roof. By merging, we offer a complete, seamless experience: from sourcing quality materials to delivering them to your site, Kiwaleis is your single point of contact.',
       },
       {
-        question: 'Where is KWL located?',
+        question: 'Where is Kiwaleis located?',
         answer: 'Our office is located at Plot No.620, Block A, Buguruni Area, Ilala, Dar es Salaam, Tanzania. You can visit us during working hours (Monday to Friday, 9:00 AM - 5:00 PM) or contact us by phone or email.',
       },
       {
@@ -26,8 +26,8 @@ const faqCategories = [
         answer: 'We serve clients across Tanzania, including Dar es Salaam, Mtwara, Lindi, Dodoma, Arusha, and other regions. Our transportation and logistics network also extends to neighboring countries in East and Central Africa, making us a reliable partner for both local and international projects.',
       },
       {
-        question: 'How long has KWL been in business?',
-        answer: 'Our companies have over 10 years of combined experience in building materials supply and logistics. Over the years, we have built a strong reputation for quality, reliability, and customer satisfaction, serving hundreds of clients across the region. Now as KWL, we bring that same experience and trust under one brand.',
+        question: 'How long has Kiwaleis been in business?',
+        answer: 'Our companies have over 10 years of combined experience in building materials supply and logistics. Over the years, we have built a strong reputation for quality, reliability, and customer satisfaction, serving hundreds of clients across the region. Now as Kiwaleis, we bring that same experience and trust under one brand.',
       },
       {
         question: 'I was a client of Kiwale Group / Kiwaleis Investment. What changes for me?',
@@ -35,7 +35,7 @@ const faqCategories = [
       },
       {
         question: 'Why did the companies merge?',
-        answer: 'By bringing Kiwaleis Investment Limited and Kiwale Group Limited together under the KWL brand, we can offer a more complete and seamless service to our clients. Instead of dealing with two separate companies for materials and transportation, you now get everything under one roof — saving you time, simplifying communication, and ensuring better coordination for your projects.',
+        answer: 'By bringing Kiwaleis Investment Limited and Kiwale Group Limited together under the Kiwaleis brand, we can offer a more complete and seamless service to our clients. Instead of dealing with two separate companies for materials and transportation, you now get everything under one roof — saving you time, simplifying communication, and ensuring better coordination for your projects.',
       },
     ],
   },

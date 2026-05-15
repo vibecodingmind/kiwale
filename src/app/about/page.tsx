@@ -31,7 +31,7 @@ import FooterSection from '@/components/FooterSection'
 const divisions = [
   {
     icon: Building2,
-    title: 'KWL Building Solutions',
+    title: 'Kiwaleis Building Solutions',
     formerly: 'Formerly Kiwaleis Investment Limited',
     desc: 'Your trusted source for high-quality building materials, timber wood, wood poles, and specialized construction materials. From cement and steel to custom timber cuts, we supply everything your project needs — sourced from trusted manufacturers and delivered to your site.',
     services: [
@@ -44,7 +44,7 @@ const divisions = [
   },
   {
     icon: Truck,
-    title: 'KWL Transport & Logistics',
+    title: 'Kiwaleis Transport & Logistics',
     formerly: 'Formerly Kiwale Group Limited',
     desc: 'Reliable transportation and logistics services across Tanzania and beyond. Whether you need local delivery or international freight, our fleet and logistics network ensure your goods arrive safely and on time — every time.',
     services: [
@@ -108,7 +108,7 @@ const coreValues = [
   {
     icon: Lock,
     title: 'Integrity & Trust',
-    desc: 'Honesty and transparency are the foundations of our business. We build trust through fair pricing, clear communication, and standing behind every product we supply. When you work with KWL, you work with a partner you can rely on completely.',
+    desc: 'Honesty and transparency are the foundations of our business. We build trust through fair pricing, clear communication, and standing behind every product we supply. When you work with Kiwaleis, you work with a partner you can rely on completely.',
   },
   {
     icon: Users,
@@ -192,7 +192,7 @@ export default function AboutPage() {
                 <span className="text-[#00e5df]">About Us</span>
               </nav>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-                About KWL
+                About Kiwaleis
               </h1>
               <p className="mt-4 text-white/70 max-w-2xl text-base md:text-lg leading-relaxed">
                 One brand. Two decades of trust. Building and transporting Tanzania&apos;s future — together.
@@ -214,13 +214,13 @@ export default function AboutPage() {
 
               <div className="space-y-5 text-[#606060] text-base md:text-lg leading-relaxed">
                 <p>
-                  KWL is the united brand of two well-established Tanzanian companies — <strong className="text-[#1a1a2e]">Kiwaleis Investment Limited</strong> (building materials supply) and <strong className="text-[#1a1a2e]">Kiwale Group Limited</strong> (transportation &amp; logistics) — now operating together under one roof to serve you better.
+                  Kiwaleis Investment Limited is a well-established Tanzanian company — <strong className="text-[#1a1a2e]">Kiwaleis Investment Limited</strong> (building materials supply) and <strong className="text-[#1a1a2e]">Kiwale Group Limited</strong> (transportation &amp; logistics) — now operating together under one roof to serve you better.
                 </p>
                 <p>
-                  For over 10 years, our clients have trusted Kiwaleis Investment for quality building materials and Kiwale Group for reliable transportation. By bringing both companies together as KWL, we now offer a complete, seamless experience — from sourcing materials to delivering them to your site.
+                  For over 10 years, our clients have trusted Kiwaleis Investment for quality building materials and Kiwale Group for reliable transportation. By bringing both companies together as Kiwaleis, we now offer a complete, seamless experience — from sourcing materials to delivering them to your site.
                 </p>
                 <p>
-                  Whether you need cement, timber, wood poles, or specialized construction materials — or you need goods transported locally or internationally — KWL is your single point of contact. Same teams, same quality, same commitment — now stronger together.
+                  Whether you need cement, timber, wood poles, or specialized construction materials — or you need goods transported locally or internationally — Kiwaleis is your single point of contact. Same teams, same quality, same commitment — now stronger together.
                 </p>
               </div>
 
@@ -256,7 +256,7 @@ export default function AboutPage() {
                 Two Divisions, One Mission
               </h2>
               <p className="mt-4 text-[#606060] max-w-2xl mx-auto text-base leading-relaxed">
-                KWL operates through two specialized divisions — each built on years of industry expertise and dedicated to serving your specific needs.
+                Kiwaleis operates through two specialized divisions — each built on years of industry expertise and dedicated to serving your specific needs.
               </p>
             </div>
 
@@ -394,7 +394,7 @@ export default function AboutPage() {
           <div className="relative z-10 max-w-7xl mx-auto px-4">
             <div className="text-center mb-12 md:mb-14">
               <p className="text-[#00e5df] font-semibold text-sm uppercase tracking-wider mb-3">
-                The KWL Advantage
+                The Kiwaleis Advantage
               </p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                 Why We Are The Best
@@ -472,7 +472,7 @@ export default function AboutPage() {
                   Ready to Work With Us?
                 </h2>
                 <p className="text-white/80 max-w-2xl mx-auto mb-7 text-base leading-relaxed">
-                  Partner with KWL for quality materials, reliable delivery, and exceptional service. Let&apos;s build something great together.
+                  Partner with Kiwaleis for quality materials, reliable delivery, and exceptional service. Let&apos;s build something great together.
                 </p>
                 <Link href="/contact">
                   <Button
