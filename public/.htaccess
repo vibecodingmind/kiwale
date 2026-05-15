@@ -1,0 +1,28 @@
+RewriteEngine On
+RewriteBase /
+
+# ─── Disable directory listing ───
+Options -Indexes
+
+# ─── Don't rewrite real files ───
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# ─── Don't rewrite _next assets ───
+RewriteRule ^_next/ - [L]
+
+# ─── Remove trailing slash (except root) ───
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# ─── Clean URL -> .html mapping ───
+# Single segment: /about -> about.html
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^([^/.]+)$ $1.html [L]
+
+# Two segments: /services/building-materials -> services/building-materials.html
+RewriteCond %{DOCUMENT_ROOT}/$1/$2.html -f
+RewriteRule ^([^/.]+)/([^/.]+)$ $1/$2.html [L]
+
+# ─── Custom 404 ───
+ErrorDocument 404 /404.html
