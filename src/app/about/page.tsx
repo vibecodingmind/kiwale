@@ -44,7 +44,7 @@ const divisions = [
   },
   {
     icon: Truck,
-    title: 'Kiwaleis Transport & Logistics',
+    title: 'Kiwale Group Transport & Logistics Services',
     formerly: 'Formerly Kiwale Group Limited',
     desc: 'Reliable transportation and logistics services across Tanzania and beyond. Whether you need local delivery or international freight, our fleet and logistics network ensure your goods arrive safely and on time — every time.',
     services: [
@@ -394,7 +394,7 @@ export default function AboutPage() {
           <div className="relative z-10 max-w-7xl mx-auto px-4">
             <div className="text-center mb-12 md:mb-14">
               <p className="text-[#00e5df] font-semibold text-sm uppercase tracking-wider mb-3">
-                The Kiwaleis Advantage
+                Our Advantage
               </p>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white">
                 Why We Are The Best
@@ -472,7 +472,7 @@ export default function AboutPage() {
                   Ready to Work With Us?
                 </h2>
                 <p className="text-white/80 max-w-2xl mx-auto mb-7 text-base leading-relaxed">
-                  Partner with Kiwaleis for quality materials, reliable delivery, and exceptional service. Let&apos;s build something great together.
+                  Partner with us for quality materials, reliable delivery, and exceptional service. Let&apos;s build something great together.
                 </p>
                 <Link href="/contact">
                   <Button

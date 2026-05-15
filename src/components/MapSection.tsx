@@ -26,7 +26,7 @@ export default function MapSection() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Kiwaleis Investment Limited Location"
+            title="Office location"
             className="w-full"
           />
         </div>
