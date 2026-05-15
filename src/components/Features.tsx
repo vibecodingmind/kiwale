@@ -35,7 +35,7 @@ export default function Features() {
   })
 
   return (
-    <section className="bg-[#f8f9fa] py-10 md:py-20">
+    <section className="bg-[#f8f9fa] py-8 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div ref={headerReveal.ref} className="text-center mb-6 md:mb-10">
           <p className="text-[#00908C] font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2">Our Values</p>
@@ -50,7 +50,7 @@ export default function Features() {
               <div className="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-[#00908C]/10 mb-3 sm:mb-4 icon-bounce group-hover:bg-[#00908C]/20 transition-colors">
                 <feature.icon className="size-5 sm:size-6 md:size-7 text-[#00908C] group-hover:text-[#007370] transition-colors" />
               </div>
-              <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#00908C] mb-1 sm:mb-2">
+              <h3 className="text-xs sm:text-sm md:text-lg font-bold text-[#00908C] mb-1 sm:mb-2">
                 {feature.title}
               </h3>
               <p className="text-[10px] sm:text-xs md:text-sm text-[#606060] leading-relaxed">

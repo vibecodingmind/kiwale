@@ -37,7 +37,7 @@ export default function AboutBanner() {
   })
 
   return (
-    <section id="about" className="bg-white py-10 md:py-20">
+    <section id="about" className="bg-white py-8 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div
           ref={bannerReveal.ref}
@@ -47,8 +47,8 @@ export default function AboutBanner() {
           <div className="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/3 float-animation" />
           <div className="absolute bottom-0 left-0 w-60 h-60 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/4 float-animation" style={{ animationDelay: '1s' }} />
 
-          <div className="relative z-10 p-6 sm:p-8 md:p-14">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+          <div className="relative z-10 p-5 sm:p-8 md:p-14">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
               {/* Left - Text Content */}
               <div>
                 <p className="text-[#00e5df] text-xs sm:text-sm font-semibold uppercase tracking-wider mb-2 sm:mb-3">
@@ -57,20 +57,20 @@ export default function AboutBanner() {
                 <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight">
                   Quality Materials, Reliable Service, and On-Time Delivery
                 </h2>
-                <p className="mt-4 sm:mt-5 text-white/80 leading-relaxed text-sm sm:text-base">
+                <p className="mt-3 sm:mt-5 text-white/80 leading-relaxed text-sm sm:text-base">
                   At Kiwaleis Investment Limited, we are dedicated to providing superior
                   building materials, seamless logistics, and exceptional customer
                   support. We ensure that every project receives the best resources,
                   delivered on time and with integrity. Your trust drives our
                   commitment to excellence!
                 </p>
-                <p className="mt-3 sm:mt-4 text-[#00e5df] font-semibold text-base sm:text-lg">
+                <p className="mt-3 sm:mt-4 text-[#00e5df] font-semibold text-sm sm:text-lg">
                   Your success is our priority!
                 </p>
                 <div className="mt-5 sm:mt-7">
                   <Link href="/services">
                     <Button
-                      className="bg-white text-[#00908C] hover:bg-white/90 font-semibold px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base group btn-glow w-full sm:w-auto"
+                      className="bg-white text-[#00908C] hover:bg-white/90 font-semibold px-6 sm:px-8 py-2.5 sm:py-3 text-sm sm:text-base group btn-glow w-full sm:w-auto rounded-lg"
                       size="lg"
                     >
                       Explore Our Services
@@ -85,11 +85,11 @@ export default function AboutBanner() {
                 {highlights.map((item) => (
                   <div
                     key={item.title}
-                    className="bg-white/10 backdrop-blur-sm rounded-xl p-4 sm:p-5 border border-white/10 hover:bg-white/[0.18] hover:border-[#00e5df]/30 hover:scale-[1.03] transition-all duration-300 cursor-pointer group"
+                    className="bg-white/10 backdrop-blur-sm rounded-xl p-3.5 sm:p-5 border border-white/10 hover:bg-white/[0.18] hover:border-[#00e5df]/30 hover:scale-[1.03] transition-all duration-300 cursor-pointer group"
                   >
                     <item.icon className="size-6 sm:size-8 text-[#00e5df] mb-2 sm:mb-3 group-hover:scale-110 transition-transform duration-300" />
                     <h4 className="text-white font-bold text-xs sm:text-sm md:text-base">{item.title}</h4>
-                    <p className="text-white/60 text-[10px] sm:text-xs md:text-sm mt-1">{item.desc}</p>
+                    <p className="text-white/60 text-[10px] sm:text-xs md:text-sm mt-0.5 sm:mt-1">{item.desc}</p>
                   </div>
                 ))}
               </div>

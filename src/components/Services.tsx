@@ -60,10 +60,10 @@ export default function Services() {
   })
 
   return (
-    <section id="services" className="bg-[#f8f9fa] py-10 md:py-20">
+    <section id="services" className="bg-white py-8 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div ref={headerReveal.ref} className="text-center mb-8 md:mb-12">
+        <div ref={headerReveal.ref} className="text-center mb-6 md:mb-12">
           <p className="text-[#00908C] font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2">
             What We Offer
           </p>
@@ -76,13 +76,13 @@ export default function Services() {
         </div>
 
         {/* ─── Kiwaleis Investment Limited Building Solution ─── */}
-        <div className="mb-8 md:mb-12">
+        <div className="mb-6 md:mb-12">
           <div className="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
             <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-gradient-to-br from-[#00908C] to-[#00b0aa] flex items-center justify-center shrink-0">
               <Building2 className="size-3.5 sm:size-4 text-white" />
             </div>
             <div>
-              <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#1a1a2e]">Kiwaleis Investment Limited Building Solution</h3>
+              <h3 className="text-xs sm:text-sm md:text-lg font-bold text-[#1a1a2e]">Kiwaleis Investment Limited Building Solution</h3>
             </div>
           </div>
           <div ref={buildingReveal.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -92,7 +92,7 @@ export default function Services() {
                 href={service.href}
                 className="card-glow bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group cursor-pointer"
               >
-                <div className="relative h-32 sm:h-40 overflow-hidden img-reveal">
+                <div className="relative h-36 sm:h-40 overflow-hidden img-reveal">
                   <Image
                     src={service.image}
                     alt={service.title}
@@ -102,7 +102,7 @@ export default function Services() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="p-3 sm:p-4">
+                <div className="p-3.5 sm:p-4">
                   <h4 className="text-xs sm:text-sm font-bold text-[#00908C] mb-1 sm:mb-1.5 line-clamp-2 group-hover:text-[#007370] transition-colors">
                     {service.title}
                   </h4>
@@ -126,7 +126,7 @@ export default function Services() {
               <Truck className="size-3.5 sm:size-4 text-white" />
             </div>
             <div>
-              <h3 className="text-sm sm:text-base md:text-lg font-bold text-[#1a1a2e]">Kiwale Group Limited Transport and Logistics</h3>
+              <h3 className="text-xs sm:text-sm md:text-lg font-bold text-[#1a1a2e]">Kiwale Group Limited Transport and Logistics</h3>
             </div>
           </div>
           <div ref={transportReveal.ref} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -136,7 +136,7 @@ export default function Services() {
                 href={service.href}
                 className="card-glow bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100 group cursor-pointer sm:col-span-2 lg:col-span-2"
               >
-                <div className="relative h-40 sm:h-48 overflow-hidden img-reveal">
+                <div className="relative h-44 sm:h-48 overflow-hidden img-reveal">
                   <Image
                     src={service.image}
                     alt={service.title}

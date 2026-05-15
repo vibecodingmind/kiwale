@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { useScrollReveal, useStaggerReveal } from '@/hooks/useScrollReveal'
 import TopHeader from '@/components/TopHeader'
 import Navbar from '@/components/Navbar'
+import MapSection from '@/components/MapSection'
 import FooterSection from '@/components/FooterSection'
 
 const contactInfo = [
@@ -275,14 +276,15 @@ export default function ContactPage() {
               {/* Map */}
               <div className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm lg:flex-1 min-h-[400px] md:min-h-[500px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.5!2d39.25!3d-6.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTEnMDAuMCJTIDM5wrAxNScwMC4wIkU!5e0!3m2!1sen!2stz!4v1700000000000"
+                  src="https://maps.google.com/maps?q=KIWALEIS+TIMBER+POLES+SUPPLIER+AND+EXPORTER+Dar+es+Salaam&t=&z=15&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Kiwaleis Investment Limited Location"
+                  title="Office location"
+                  className="w-full h-full min-h-[400px] md:min-h-[500px]"
                 />
               </div>
             </div>

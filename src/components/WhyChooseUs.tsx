@@ -35,10 +35,10 @@ export default function WhyChooseUs() {
   })
 
   return (
-    <section id="why-us" className="bg-white py-10 md:py-20">
+    <section id="why-us" className="bg-[#f8f9fa] py-8 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
-        <div ref={headerReveal.ref} className="text-center mb-8 md:mb-14">
+        <div ref={headerReveal.ref} className="text-center mb-6 md:mb-14">
           <p className="text-[#00908C] font-semibold text-xs sm:text-sm uppercase tracking-wider mb-2">
             Why Choose Us
           </p>
@@ -52,20 +52,20 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        {/* Reason Cards - 2x2 Grid */}
+        {/* Reason Cards */}
         <div ref={cardReveal.ref} className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           {reasons.map((reason) => (
             <div
               key={reason.title}
-              className="card-tilt bg-[#f8f9fa] rounded-xl p-5 sm:p-6 md:p-7 shadow-sm border border-gray-100 flex gap-4 sm:gap-5 cursor-pointer group"
+              className="card-tilt bg-white rounded-xl p-4 sm:p-6 md:p-7 shadow-sm border border-gray-100 flex gap-3 sm:gap-5 cursor-pointer group"
             >
               <div className="shrink-0">
-                <div className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl bg-[#00908C]/10 flex items-center justify-center icon-bounce group-hover:bg-[#00908C]/20 transition-colors">
+                <div className="w-10 h-10 sm:w-14 sm:h-14 rounded-xl bg-[#00908C]/10 flex items-center justify-center icon-bounce group-hover:bg-[#00908C]/20 transition-colors">
                   <reason.icon className="size-5 sm:size-7 text-[#00908C] group-hover:text-[#007370] transition-colors" />
                 </div>
               </div>
               <div className="min-w-0">
-                <h3 className="text-base sm:text-lg font-bold text-[#1a1a2e] mb-1.5 sm:mb-2 group-hover:text-[#00908C] transition-colors">
+                <h3 className="text-sm sm:text-lg font-bold text-[#1a1a2e] mb-1 sm:mb-2 group-hover:text-[#00908C] transition-colors">
                   {reason.title}
                 </h3>
                 <p className="text-[#606060] text-xs sm:text-sm leading-relaxed">

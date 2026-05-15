@@ -7,7 +7,6 @@ import Features from '@/components/Features'
 import AboutBanner from '@/components/AboutBanner'
 import Services from '@/components/Services'
 import WhyChooseUs from '@/components/WhyChooseUs'
-import MapSection from '@/components/MapSection'
 import FooterSection from '@/components/FooterSection'
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
         <Features />
         <Services />
         <WhyChooseUs />
-        <MapSection />
       </main>
       <FooterSection />
     </div>
