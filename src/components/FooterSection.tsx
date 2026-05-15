@@ -50,7 +50,7 @@ export default function FooterSection() {
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed">
-              Building materials and transportation solutions — under one roof. Kiwaleis &amp; Kiwale Group Limited, now stronger together as Kiwale.
+              Kiwaleis Investment Limited — Building materials and transportation solutions under one roof.
             </p>
             {/* Social Links */}
             <div className="flex items-center gap-3 mt-5">
